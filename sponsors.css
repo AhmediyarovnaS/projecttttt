@@ -1,0 +1,102 @@
+*{
+  margin:0 auto;
+  padding:0 ;
+}
+
+
+.header{
+  display: flex;
+  justify-content: space-around;
+  background-color: #0077ff;
+    width: 100%;
+  /*padding: 20px;*/
+}
+
+.main {
+  padding: 20px;
+  background-color: #0077ff;
+  color: rgb(0, 0, 0);
+  transition: color 0.3s easy;
+  font-size: 20px;
+  text-transform: uppercase;
+  
+}
+
+.main:hover {
+  background-color:#000000;
+  color: #0077ff
+}
+.header:hover{
+  color: #696c70;
+  
+
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+ table{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.logo {
+    max-width: 50px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1); /* Увеличение логотипа */
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column; /* Stack items on smaller screens */
+        align-items: center;
+    }
+
+    .main {
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    .grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Smaller logos for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .main {
+        font-size: 16px; /* Further reduce font size for very small screens */
+    }
+
+    h2 {
+        font-size: 1.5em; /* Smaller header text */
+    }
+
+    .logo img {
+        max-width: 80%; /* Smaller logos on very small screens */
+    }
+}

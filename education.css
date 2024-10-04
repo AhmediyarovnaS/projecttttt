@@ -1,0 +1,261 @@
+*{
+  margin:0 auto;
+  padding:0 ;
+}
+
+
+.header{
+  display: flex;
+  justify-content: space-around;
+  background-color: #0077ff;
+    width: 100%;
+    
+  /*padding: 20px;*/
+}
+
+.main {
+  padding: 20px;
+  background-color: #0077ff;
+  color: rgb(0, 0, 0);
+  transition: color 0.3s easy;
+  font-size: 20px;
+  text-transform: uppercase;
+  
+}
+
+.main:hover {
+  background-color:#000000;
+  color: #0077ff
+}
+.header:hover{
+  color: #696c70;
+  
+
+}
+
+a{
+    text-decoration: none;
+    color:white;
+}
+.border{
+    width: 1700px;
+    font-size: 40px;
+    padding-top: 20px;
+    margin-top: 20px;
+    font-family: 'Inter Tight';
+    padding-left: 20px;
+    text-transform: uppercase;
+   padding-left: 30px;
+}
+
+ .education{
+  padding:0;
+ }
+      .page{
+    display: flex;
+    padding-left: 800px;
+    padding-top: 300px;
+    height: 36rem;
+    background-size: cover !important;
+    background-position: center !important;
+      }
+.text{
+      width: 60rem;
+      color: rgb(255, 255, 255);
+    }
+h4{
+color: rgb(251, 243, 243);
+font-size: 60px;
+}
+ h2{
+  font-size: 80px;
+ }
+h5{
+color: #000000;
+text-transform: uppercase;
+padding-top: 20px;
+font-size: 20px;
+
+
+}
+ .heading{
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 7rem;
+  font-size: 3rem
+ }
+ 
+
+  
+.box_container{
+  @include grid(16rem);
+}
+.box{
+  padding:3rem;
+  text-align: center;
+  border:border;
+  background: rgb(255, 255, 255);
+}
+
+.img{
+    height:10rem;
+    margin-bottom: .5rem;
+  }
+
+  h4{
+    padding:5rem 0;
+  }
+   p{
+
+   }
+}
+}
+}
+
+
+
+@media (max-width: 1200px) {
+  .page {
+    padding-left: 400px;
+    padding-top: 150px;
+    height: auto;
+  }
+
+  .text {
+    width: 80%;
+  }
+
+  h2 {
+    font-size: 50px;
+  }
+
+  h4 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 800px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main {
+    font-size: 18px;
+    padding: 15px;
+  }
+
+  .page {
+    padding-left: 20px;
+    padding-top: 100px;
+  }
+
+  .box {
+    padding: 2rem;
+  }
+
+  .subjects .box_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .main {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  h4 {
+    font-size: 28px;
+  }
+
+  .subjects .box_container {
+    grid-template-columns: 1fr;
+  }
+}
+
+body {
+            
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .welcome-section {
+           
+            text-align: center;
+            padding: 50px;
+            background-color: #fff;
+            letter-spacing: 5px;
+        }
+        .welcome-section h1 {
+            margin-top:60px;
+            margin-bottom: 20px;
+            font-size: 60px;
+        }
+        .welcome-section p {
+            font-size: 18px;
+            color: #666;
+            margin-bottom:40px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .club-section {
+            padding: 50px;
+            display: flex;
+            background-color: #f4f4f4;
+        }
+        .club-section h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 32px;
+        }
+        .club-cards {
+            display: flex;
+            font-family: "Gentium Plus", serif;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+        .club-card{
+            
+            background-color: #fff;
+            width: 30%;
+            margin: 10px;
+            height: 400px;
+            border-radius: 5;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+        }
+        .club-card img {
+            margin-top:40px ;
+            width: 40%;
+            border-radius: 100%;
+            object-fit: cover;
+        }
+        .club-card h3 {
+            padding: 15px;
+            font-size: 20px;
+        }
+        .club-card p {
+            padding: 0 15px 15px;
+            color: #777;
+        }
+        .view-all-btn {
+            display: block;
+            text-align: center;
+            padding: 15px;
+            margin: 20px auto;
+            background-color: #f9c74f;
+            color: #333;
+            width: 200px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 18px;
+       }

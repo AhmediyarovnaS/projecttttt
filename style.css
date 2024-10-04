@@ -1,0 +1,105 @@
+*{
+  margin:0 auto;
+  padding:0 ;
+}
+
+
+.header{
+  display: flex;
+  justify-content: space-around;
+  background-color: #0077ff;
+    width: 100%;
+  /*padding: 20px;*/
+}
+
+.main {
+  padding: 20px;
+  background-color: #0077ff;
+  color: rgb(0, 0, 0);
+  transition: color 0.3s easy;
+  font-size: 20px;
+  text-transform: uppercase;
+  
+}
+
+.main:hover {
+  background-color:#000000;
+  color: #0077ff
+}
+.header:hover{
+  color: #696c70;
+  
+
+}
+
+.image{
+  width: 855px;
+  height: 400px;
+  margin-top: 200px;
+  background-image: url(./jihc-logo-sdu-v3.png);
+  background-size: cover;
+  background-position: center;
+  
+}
+  
+a{
+  text-decoration: none;
+  color: #feffff;
+}
+ 
+.logo{
+  width: 50%;
+}
+
+
+.footer{
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  max-width: 1000px;
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 5px;
+  margin: auto;
+  text-transform: uppercase;
+  margin-top:400px;
+  background: white;
+  padding: 10px;
+  width: 90%;
+  border-radius: 10px;
+  box-shadow: 0 4px 50px #0077ff;
+}
+.footer_text{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 30px;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align items */
+  }
+
+  .main {
+    padding: 10px; /* Reduce padding */
+    font-size: 16px; /* Adjust font size */
+    width: 100%; /* Ensure full width */
+    text-align: center; /* Center text */
+  }
+
+  .image {
+    width: 100%; /* Full width on smaller screens */
+    height: 250px; /* Adjust height */
+    margin-top: 100px; /* Adjust margin */
+  }
+
+  .footer {
+    font-size: 24px; /* Adjust footer font size */
+    margin-top: 200px; /* Adjust margin */
+    padding: 20px; /* Increase padding */
+  }
+
+  .footer_text {
+    padding: 20px; /* Adjust padding for footer text */
+    font-size: 16px; /* Adjust font size for footer text */
+  }
+}

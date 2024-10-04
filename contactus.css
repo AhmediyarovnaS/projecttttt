@@ -1,0 +1,132 @@
+*{
+  margin:0;
+  padding: 0;
+}
+
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  background-color: #0077ff;
+  width: 100%;
+  position: relative;
+  bottom: 20px;
+  
+  /*padding: 20px;*/
+}
+
+.main {
+  padding: 20px;
+  background-color: #0077ff;
+  color: rgb(0, 0, 0);
+  transition: color 0.3s easy;
+  font-size: 20px;
+  text-transform: uppercase;
+  
+}
+
+.main:hover {
+  background-color:#000000;
+  color: #0077ff
+}
+.header:hover{
+  color: #696c70;
+  
+
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            position: relative;
+            top: 160px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .info {
+            margin: 20px 0;
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #555;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        button {
+            background: #077fff;
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            
+            font-size: 1em;
+            width: 100%;
+        }
+        button:hover {
+            background: #04305f;
+        }
+
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column; /* Stack the header items vertically */
+    align-items: center; /* Center align the header items */
+  }
+
+  .main {
+    padding: 10px; /* Reduce padding for smaller screens */
+    font-size: 16px; /* Adjust font size */
+  }
+
+  .container {
+    padding: 20px; /* Reduce padding in the container */
+    top: 100px; /* Adjust position */
+  }
+
+  h1 {
+    font-size: 1.5em; /* Adjust heading size */
+  }
+
+  .info {
+    font-size: 1em; /* Adjust font size for info */
+  }
+
+  input, textarea {
+    padding: 10px; /* Reduce padding for inputs */
+    font-size: 0.9em; /* Adjust font size */
+  }
+
+  button {
+    padding: 12px; /* Reduce button padding */
+  }
+
+  img {
+    width: 50px; /* Adjust image size */
+    margin-right: 0; /* Remove excessive margin */
+    padding-bottom: 80px; /* Adjust bottom padding */
+  }
+}
